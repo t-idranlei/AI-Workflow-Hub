@@ -1,0 +1,23 @@
+ID,Tool,Category,ToolStatus
+1,ChatGPT,General Chat,Clear for Usage
+2,Claude,General Chat,Clear for Usage
+3,Gemini,General Chat,Clear for Usage
+4,Deepseek,General Chat,Evaluation Required
+5,Qwen,General Chat,Evaluation Required
+6,Grok,General Chat,Evaluation Required
+7,Microsoft Copilot,General Chat,Clear for Usage
+8,Github Copilot,Coding,Clear for Usage
+9,Blackbox,Coding,Evaluation Required
+10,Replit,Coding,Evaluation Required
+11,Groq,Coding,Clear for Usage
+12,n8n,Automation & Workflow,Clear for Usage
+13,Zapier,Automation & Workflow,Clear for Usage
+14,PowerAutomate,Automation & Workflow,Clear for Usage
+15,Perplexity,Search Engine,Evaluation Required
+16,Notion,Productivity & Platform,Clear for Usage
+17,Quillbot,Productivity & Platform,Clear for Usage
+18,Grammarly,Productivity & Platform,Evaluation Required
+19,Parakeet AI,Productivity & Platform,Evaluation Required
+20,Remini,Media Generation,Evaluation Required
+21,DALL-E,Media Generation,Evaluation Required
+22,Suno.ai,Media Generation,Evaluation Required
