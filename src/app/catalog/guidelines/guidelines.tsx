@@ -23,11 +23,11 @@ function guidelines() {
   const { fetchCsvData } = useFetch();
 
   useEffect(() => {
-    fetchCsvData("/data/EquiVerseAI-GuidelinesRules.csv", (data) => {
+    fetchCsvData(`${import.meta.env.BASE_URL}data/EquiVerseAI-GuidelinesRules.csv`, (data) => {
       setGuidelineRules(data);
     });
 
-    fetchCsvData("/data/EquiVerseAI-ToolStatus.csv", (data) => {
+    fetchCsvData(`${import.meta.env.BASE_URL}data/EquiVerseAI-ToolStatus.csv`, (data) => {
       setToolStatuses(data);
     });
   }, []);

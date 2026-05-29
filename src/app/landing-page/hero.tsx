@@ -1,5 +1,6 @@
 import { Button } from '../components/ui/button'
 import { ArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom';
 import itImage from "../assets/IMG_9629-scaled.jpg"
 
 function hero() {
@@ -16,14 +17,14 @@ function hero() {
               <p className="text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-1.5! mt-1.5! text-justify!">
                 Explore a curated catalog aimed at enhancing productivity, automating workflows, and enabling smarter teamwork, featuring practical tools, guidelines, and use cases to optimize tasks and improve efficiency.
               </p>
-            </div>
+            </div>  
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href = "/catalog">
+              <Link to= "/catalog">
               <Button size="lg" className="border border-black text-black text-base bg-white hover:bg-gray-800 hover:text-white dark:bg-blue-600 dark:hover:bg-blue-700 dark:text-white">
                 Get Started
                 <ArrowRight></ArrowRight>
-              </Button></a>
+              </Button></Link>
             </div>
           </div>
 

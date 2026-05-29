@@ -1,6 +1,7 @@
 import { Button } from "../components/ui/button";
 import { Moon, Sun, ArrowUpRight } from "lucide-react";
 import { useTheme } from "../landing-page/theme-provider";
+import { Link } from 'react-router-dom';
 
 function header() {
   const { theme, toggleTheme } = useTheme();
@@ -32,13 +33,13 @@ function header() {
                 <Sun className="size-5" />
               )}
             </Button>
-            <a href = "#features" className = "scroll-smooth">
+            <Link to= "#features" className = "scroll-smooth">
               <Button className="bg-gray-900 hover:bg-gray-800 dark:bg-blue-600 dark:hover:bg-blue-700 dark:text-white ArrowRight">
                Browse
               <ArrowUpRight>
               </ArrowUpRight>
             </Button>
-            </a>
+            </Link>
             <Button variant="ghost" size="icon" className="md:hidden"></Button>
           </div>
         </div>

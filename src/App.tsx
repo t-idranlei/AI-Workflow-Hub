@@ -16,7 +16,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <div className="fixed inset-0 h-full w-screen flex flex-col bg-white dark:bg-gray-950 overflow-y-auto">
           <Routes>
             <Route path="/" element={<LandingHeader />} />

@@ -8,6 +8,12 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 export default defineConfig([
   globalIgnores(['dist']),
   {
+    plugins: {
+      'react-router': reactRouter,
+    },
+    rules: {
+      'react-router/no-html-a-tags': 'error',
+    },
     files: ['**/*.{ts,tsx}'],
     extends: [
       js.configs.recommended,
