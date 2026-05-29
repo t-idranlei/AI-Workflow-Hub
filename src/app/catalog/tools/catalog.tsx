@@ -18,7 +18,7 @@ function catalog() {
   const { fetchCsvData } = useFetch();
 
   useEffect(() => {
-    fetchCsvData(`${import.meta.env.BASE_URL}/data/EquiVerseAI-assistants.csv`, (data) => {
+    fetchCsvData(`${import.meta.env.BASE_URL}data/EquiVerseAI-assistants.csv`, (data) => {
       setTools(data);
     });
   }, []);

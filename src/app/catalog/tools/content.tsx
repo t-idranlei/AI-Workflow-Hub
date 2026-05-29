@@ -89,7 +89,7 @@ function content({ tools }: ContentProps) {
                 <div className="flex-1 flex-col gap-1 mb-1! items-center justify-between">
                   <div className="size-12 rounded-full bg-white dark:bg-gray-400 flex items-center! content-center! justify-center shrink-0 mx-auto">
                     <img
-                      src={`/cardLogos/${tools.Tools.toLowerCase().replace(/[^a-z0-9]/g, "")}.png`}
+                      src={`${import.meta.env.BASE_URL}cardLogos/${tools.Tools.toLowerCase().replace(/[^a-z0-9]/g, "")}.png`}
                       alt={tools.Tools}
                       className="size-8 object-contain"
                       onError={(e) => {
@@ -130,7 +130,7 @@ function content({ tools }: ContentProps) {
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="w-8"></div>
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white! text-center">
+                <h2 className="text-2xl font-bold text-gray-900! dark:text-white! text-center">
                   {selectedTool.Tools}
                 </h2>
                 <button
@@ -144,7 +144,7 @@ function content({ tools }: ContentProps) {
                 <div className="w-3!"></div>
                 <div className="size-20 rounded-full bg-white dark:bg-gray-400 flex items-center justify-center shadow-md">
                   <img
-                    src={`/cardLogos/${selectedTool.Tools.toLowerCase().replace(/[^a-z0-9]/g, "")}.png`}
+                    src={`${import.meta.env.BASE_URL}cardLogos/${selectedTool.Tools.toLowerCase().replace(/[^a-z0-9]/g, "")}.png`}
                     alt={selectedTool.Tools}
                     className="size-12 object-contain"
                     onError={(e) => {

@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
 import { ArrowDown } from "lucide-react";
-import { Link } from 'react-router-dom';
+
 
 function hero() {
   return (
@@ -18,7 +19,7 @@ function hero() {
               </p>
             </div>
             <div className="flex justify-center flex-col sm:flex-row gap-4">
-              <Link to= "#content" className = "scroll-smooth">
+              <Link to = "#content" className = "scroll-smooth">
                 <Button
                   size="lg"
                   className="border border-black text-black text-base bg-white hover:bg-gray-800 hover:text-white dark:bg-blue-600 dark:hover:bg-blue-700 dark:text-white"

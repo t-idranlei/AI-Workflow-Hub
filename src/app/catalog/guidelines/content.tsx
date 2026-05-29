@@ -105,6 +105,11 @@ function Content({ guidelineRules, toolStatuses }: ContentProps) {
               variant={activeFilter === tab ? "default" : "outline"}
               size="sm"
               onClick={() => setActiveFilter(tab)}
+              className={
+                activeFilter === tab
+                  ? "bg-blue-600 hover:bg-[#002F87]! text-white"
+                  : ""
+              }
             >
               {tab}
             </Button>
@@ -154,7 +159,7 @@ function CategoryCard({
   return (
     <Card className="border border-gray-200 rounded-xl">
       <CardContent className="p-4 space-y-3">
-        <div className="flex items-center gap-2 font-medium text-sm text-blue-900">
+        <div className="flex items-center gap-2 font-medium text-sm text-blue-900 dark:text-blue-50">
           <Icon className="size-4" />
           {label}
         </div>
