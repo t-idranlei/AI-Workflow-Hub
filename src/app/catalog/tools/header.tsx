@@ -31,11 +31,11 @@ function header() {
             >
               Guidelines
             </Link>
-            <Link to="/community"
+            {/* <Link to="/community"
               className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
             >
               Community
-            </Link>
+            </Link> */}
           </nav>
 
           <div className="flex items-center gap-3">
