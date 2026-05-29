@@ -1,4 +1,5 @@
 import { Sparkles, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const footerLinks = {
   product: [
@@ -28,7 +29,11 @@ function footer() {
               <div className="flex size-10 items-center justify-center rounded-lg bg-white/10 dark:bg-blue-600/20">
                 <Sparkles className="size-6 text-white dark:text-blue-400" />
               </div>
-              <span className="text-xl font-bold text-white">EquiVerseAI</span>
+              <Link to="/">
+                <span className="text-xl font-bold text-white">
+                  AI Toolkit Hub
+                </span>
+              </Link>
             </div>
             <p className="text-sm mb-6 max-w-xs text-gray-300 dark:text-gray-400 text-left!">
               Empowering teams with AI-driven solutions for smarter workflows
