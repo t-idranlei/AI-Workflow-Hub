@@ -66,6 +66,48 @@ const toolBadge: Record<string, string> = {
   "Evaluation Required": "bg-amber-100 text-amber-800",
 };
 
+const ruleLegend = [
+  { icon: "✅", label: "Data rule" },
+  { icon: "🔵", label: "Review required" },
+  { icon: "⚠️", label: "Risky" },
+  { icon: "🚫", label: "Prohibited" },
+  { icon: "🟣", label: "Special Case" },
+];
+
+function Legend() {
+  return (
+    <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-700">
+      <span className="font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wide text-xs">
+        Legend:
+      </span>
+
+      <span className="flex items-center gap-1.5 dark:text-gray-200">
+        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-green-400 text-xs font-medium bg-green-100 text-green-800">
+          <span className="size-1.5 rounded-full bg-green-400 inline-block" />
+          ChatGPT
+        </span>
+        Cleared for use
+      </span>
+
+      <span className="flex items-center gap-1.5 dark:text-gray-200">
+        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-amber-400 text-xs font-medium bg-amber-100 text-amber-800">
+          <span className="size-1.5 rounded-full bg-amber-400 inline-block" />
+          ChatGPT
+        </span>
+        Evaluation Required
+      </span>
+
+      <span className="text-gray-300 dark:text-white">|</span>
+
+      {ruleLegend.map(({ icon, label }) => (
+        <span key={label} className="flex items-center gap-1.5 dark:text-gray-200">
+          <span className="text-base ">{icon}</span> {label}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 function Content({ guidelineRules, toolStatuses }: ContentProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeFilter, setActiveFilter] = useState("All Models");
@@ -87,6 +129,7 @@ function Content({ guidelineRules, toolStatuses }: ContentProps) {
   return (
     <section className="px-6 py-16">
       <div className="mx-auto max-w-7xl space-y-8">
+        <Legend />
         <div className="max-w-2xl mx-auto relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-gray-400" />
           <Input
