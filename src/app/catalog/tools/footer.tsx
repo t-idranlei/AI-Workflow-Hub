@@ -5,7 +5,6 @@ const footerLinks = {
   product: [
     { name: "Tools", href: "/catalog" },
     { name: "Guidelines", href: "/guidelines" },
-    { name: "Community", href: "#" },
   ],
   company: [
     { name: "About Us", href: "#" },
